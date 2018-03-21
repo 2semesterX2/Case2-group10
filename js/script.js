@@ -15,5 +15,22 @@ $(document).ready(function(){ // when the doc is ready
         $($.attr(this, 'href')).removeClass('invisible'); // show the target one
     });
     
+    const first = "The Old Kingdom";
+    const second = "Giza";
+    const third = "Cruel and heretic";
+    
+    $(document).click(function(event) {
+    var text = $(event.target).text();
+    var target = event.target;
+});
+    
+    function rw(text, target) {
+        if (text === first || text === second || text === third) {
+            target.style.backgroundColor = "green";
+        }
+    }
+        
+    $("section#six p").click(rw);
+    
     
 });

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>	
 	<head>
-		<title>The Antik Museet Treasure Hunt</title>
+		<title>The Antik Museet Aarhus</title>
 	    <meta charset="UTF-8" />
 		<link rel="stylesheet" href="css/style.css" />
         <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!--<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>-->
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Montserrat');
+        </style>
 	</head>
 	<body>
         <section id="one">
@@ -70,14 +73,15 @@
             </article>
             
             <article id="egypt_two">
-                <img id="map" src="http://viitek.dk/images/map_sample.png">
+                <img id="map" src="http://viitek.dk/images/bestmapever.png" alt="The floor map">
+                <p>The first floor</p>
                 <div id="big_one"><div>1</div></div>
                 <div id="small_one"><div>1</div></div>
                 <div id="big_two"><div>2</div></div>
                 <div id="small_two"><div>2</div></div>
                 <div id="big_three"><div>3</div></div>
                 <div id="small_three"><div>3</div></div>
-                <a href=""><div id="scan">SCAN</div></a>
+                <a href="http://viitek.dk/case2/qs.html"><div id="scan">SCAN</div></a>
             </article>
         </section>
         
@@ -91,7 +95,7 @@
             
             <article id="main_two">
                 <h4>Welcome to the Antikmuseet</h4>
-                <p>The Antique museum is a university museum. It was established as a study collection in 1949 by the first professor of classical archeology at Aarhus University, PJ Riis. 
+                <p>The Antique museum is a university museum. It was established as a study collection in     1949 by the first professor of classical archeology at Aarhus University, PJ Riis. 
                     The museum's collection consists of more than 500 plaster casts and 4000 original objects from the entire Mediterranean, covering a period from the early Bronze Age to Roman Empire.
                 </p>
                 <h4>Opening hours 2018:</h4>
@@ -105,18 +109,16 @@
                 <p><b>mail: antikmuseet@au.dk</b><br>
                     <b>tlf. 8716 1106.</b>
                 </p>
-                <br>
-                <p>Schools and gymnasiums are also more than welcome but have to set up the visit in advance. The museum has an elevator for the disabled. It is free to visit the museum for all the visitors. Guided tours have to be set up in advance and cost 500dkr.</p>
             </article>
             
             <sidebar id="nav">
                 <nav>
                     <ul>
-                        <li><a href=""><div>About</div></a></li>
-                        <li><a href=""><div>Exhibitions</div></a></li>
-                        <li><a href=""><div>Treasure Hunt</div></a></li>
-                        <li><a href=""><div>Classes</div></a></li>
-                        <li><a href=""><div>Location</div></a></li>
+                        <li><a href="#six"><div>About</div></a></li>
+                        <li><div>Exhibitions</div></li>
+                        <li><div>The Hunt</div></li>
+                        <li><div>Classes</div></li>
+                        <li><div>Location</div></li>
                     </ul>
                 </nav>
             </sidebar>
@@ -128,13 +130,49 @@
             </a>
             <div id="instr_head"><h3>INSTRUCTIONS</h3></div>
             <article id="instr_body">
-                <p>If you want to learn something new in an entertaining way, you came to the right place! First, you have to choose the culture you want to discover more about. Then, follow the map’s instructions and go to the right level of the building. This is where the fun starts! You need to chronologically go from station to station and to complete diverse tasks. To unlock the content you must scan the QR codes near the artifacts by opening your default camera app.
-                </p>
-                <img src="http://viitek.dk/images/map_sample.png" alt="Minimap" id="minimap">
+                <p>If you want to learn something new in an entertaining way, you came to the right place!</p>
+                <p>First, you have to choose the culture you want to discover more about. 
+                <p>Then, follow the map’s instructions and go to the right level of the building.</p> 
+                <p>This is where the fun starts!</p>
+                <p>You need to chronologically go from station to station and to complete diverse tasks.</p>
+                <img src="http://viitek.dk/images/bestmapever.png" alt="Minimap" id="minimap">
+                <img src="http://viitek.dk/images/qr-code.png" alt="A QR code" id="qr_one">
+                <p id="work_you_sob">Unlock the content by scanning the QR codes near the artifacts with your phone.</p>
                 <a href="#two">
                 <div id="start">START</div>
                 </a>
             </article>
+        </section>
+        
+        <section id="six">
+            <a href="#one">
+                <img src="http://viitek.dk/images/house_icon.png" alt="House icon" class="home">
+            </a>
+            <div id="about_head"><h3>About us</h3></div>
+            
+            <article id="about_body">
+                <h4>Welcome to the Antikmuseet</h4>
+                <p>The Antique museum is a university museum. It was established as a study collection in     1949 by the first professor of classical archeology at Aarhus University, PJ Riis. 
+                    The museum's collection consists of more than 500 plaster casts and 4000 original objects from the entire Mediterranean, covering a period from the early Bronze Age to Roman Empire.
+                </p>
+                <img src="http://viitek.dk/images/museum_pic_one.jpg" alt="A shot from the museum">
+                <p>Schools and gymnasiums are also more than welcome but have to set up the visit in advance. The museum has an elevator for the disabled. It is free to visit the museum for all the visitors. Guided tours have to be set up in advance and cost 500dkr.</p>
+                <img src="http://viitek.dk/images/museum_pic_two.jpg" alt="A shot from the museum">
+                <p>Subscribe to the Antique Museum mailing list and receive information about upcoming activities: <b>Click here</b></p>
+                <p>Follow us on <b>Facebook</b></p>
+            </article>
+            
+            <sidebar id="nav">
+                <nav>
+                    <ul>
+                        <li><a href="#six"><div>About</div></a></li>
+                        <li><div>Exhibitions</div></li>
+                        <li><div>The Hunt</div></li>
+                        <li><div>Classes</div></li>
+                        <li><div>Location</div></li>
+                    </ul>
+                </nav>
+            </sidebar>
         </section>
         
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"

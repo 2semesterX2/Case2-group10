@@ -64,8 +64,16 @@ table {
     100% {transform: scale(1.2);}
 }
 
+@keyframes g {
+    100% {background-color: seagreen; opacity: .6;}
+}
+
+@keyframes r {
+    100% {background-color: orangered; opacity: .6;}
+}
+
 body {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .invisible {
@@ -74,7 +82,7 @@ body {
 
 section {
     animation-name: fade_in;
-    animation-duration: .5s;
+    animation-duration: .7s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
@@ -288,21 +296,21 @@ div#theme_three .bg_pic {
     height: 50%;
     position: fixed;
     z-index: -1;
-    opacity: .4;
+    padding-top: 2rem;
 }
 #small_one {
     position: fixed;
-    top: 65%;
+    top: 70%;
     left: 22%;
 }
 #small_two {
     position: fixed;
-    top: 55%;
+    top: 60%;
     left: 13%;
 }
 #small_three {
     position: fixed;
-    top: 46%;
+    top: 51%;
     left: 21%;
 }
 #start,
@@ -333,23 +341,9 @@ article#egypt_two p {
 
 
 #four {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 20% 1fr;
-    grid-template-areas: 
-    "a1 nav"
-    "a2 nav";
     height: 100vh;
 }
-#main_one {
-    grid-area: a1;
-}
-#main_two {
-    grid-area: a2;
-    text-align: left !important;
-}
 #nav {
-    grid-area: nav;
     overflow: hidden;
     position: fixed;
     right: 0;
@@ -388,15 +382,24 @@ nav ul li:hover {
 }
 article#main_one h3,
 article#main_two h3,
-article#main_two h4 {
+article#main_two h4,
+article#about_body h4,
+div#about_head h3 {
     padding: 1rem;
     text-align: left;
 }
 article#main_two p,
-article#instr_body p {
+article#instr_body p,
+article#about_body p {
     padding-left: 1rem;
     padding-right: 4rem;
     padding-top: 1rem;
+}
+article#instr_body p {
+    padding-right: 0;
+}
+article#instr_body p:first-of-type {
+    padding-top: 2rem;
 }
 article#main_two ul {
     padding-left: 1rem;
@@ -405,10 +408,13 @@ article#main_two ul {
 
 #five {
     height: 100vh;
+    background-color: black;
+    color: white;
 }
 #instr_head,
 #museet_head,
-#egypt_head {
+#egypt_head,
+#about_head {
     font-family: 'Mya';
     text-align: center;
     background-image: url('http://viitek.dk/images/black_marble.jpg');
@@ -416,11 +422,12 @@ article#main_two ul {
     background-repeat: no-repeat;
 }
 #instr_head {
-    background-image: url('http://viitek.dk/images/black_marble.jpg');
+    background-image: url('http://viitek.dk/images/white_marble.jpg');
 }
 div#instr_head h3,
 div#museet_head h3,
-div#egypt_head h3 {
+div#egypt_head h3,
+div#about_head h3 {
     padding: 3rem;
     font-size: 2rem;
     color: white;
@@ -428,14 +435,14 @@ div#egypt_head h3 {
 }
 div#instr_head h3 {
     color: black;
+    padding-top: 1rem;
 }
 #minimap {
     height: 50%;
     width: 50%;
-    opacity: .4;
     float: right;
     padding-right: 1rem;
-    padding-top: 1rem;
+    padding-top: 1.2rem;
 }
 #qr_one {
     height: 35%;
@@ -447,6 +454,19 @@ div#instr_head h3 {
 #start {
     bottom: 1%;
 }
+#work_you_sob {
+    margin-top: 9rem;
+}
+
+
+#six {
+    height: 100vh;
+}
+article#about_body img {
+    width: 50%;
+    transform: translateX(50%);
+    padding-top: 1rem;
+}
 
 
 #seven {
@@ -454,13 +474,18 @@ div#instr_head h3 {
 }
 section#seven h3,
 section#seven h4 {
-    color: white;
+    color: lightslategrey;
     padding-top: 2rem;
+}
+section#seven h3 {
+    text-align: right;
+    padding-right: 1rem;
 }
 section#seven p {
     background: #fff;
     padding: 1rem;
     margin: 1rem;
+    border-radius: 2rem;
 }
 #q_one {
     display: grid;
@@ -481,7 +506,15 @@ section#seven p {
 #q_one_three {
     grid-area: a3;
 }
-section#seven p:hover {
-    background-color: #faeb1e;
-    transition: 1s ease;
+.r:hover {
+    animation-name: g;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.w:hover {
+    animation-name: r;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
